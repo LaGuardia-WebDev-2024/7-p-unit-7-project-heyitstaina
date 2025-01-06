@@ -17,9 +17,11 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
-  
-  fireworkX = fireworkX + 1;
+fill(216, 231, 237);
+ellipse(fireworkX, 36,70, 40);
+ ellipse(fireworkX, 75, 70, 40);
+ ellipse(fireworkX, 52, 70, 40);
+ //fireworkX = fireworkX + 1;
 
 }
 
