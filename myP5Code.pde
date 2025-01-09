@@ -26,17 +26,13 @@ draw = function(){
 fill(210, 251, 252);
  ellipse(cloudX, 75, 300, 50);
  ellipse(cloudX, 52, 150, 70);
+ 
    // The right cloud
 fill (150, 194, 217);
 ellipse(rightX, 175, 300, 50);
  ellipse(rightX, 152, 190, 70);
   ellipse(rightX, 132, 110, 70);
 
-
- 
-  
-  
-  
   sunSize = sunSize+3;
  cloudX = cloudX + 1;
 rightX = rightX - 1;
