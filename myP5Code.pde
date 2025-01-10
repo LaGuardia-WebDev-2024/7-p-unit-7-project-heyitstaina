@@ -7,6 +7,7 @@ void setup() {
 var cloudX = 20;
 var rightX = 386;
 var sunSize = 30;
+var lightSize = 30;
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
   noStroke()
@@ -18,11 +19,15 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-    // The sun
+    // The dark part of the sun
   fill(255, 204, 0);
   ellipse(130, 36, sunSize+70, sunSize+40);
+  
+  // The light part of the sun
+  fill(240, 219, 101);
+  ellipse(130, 36, lightSize+1, lightSize+1);
 
-   // The left cloud
+  // The left cloud
 fill(210, 251, 252);
  ellipse(cloudX, 75, 300, 50);
  ellipse(cloudX, 52, 150, 70);
@@ -33,7 +38,9 @@ ellipse(rightX, 175, 300, 50);
  ellipse(rightX, 152, 190, 70);
   ellipse(rightX, 132, 110, 70);
 
+  
   sunSize = sunSize+3;
+  lightSize = lightSize+3;
  cloudX = cloudX + 1;
 rightX = rightX - 1;
 
@@ -41,7 +48,8 @@ rightX = rightX - 1;
 if(cloudX > 600){
 cloudX = 200;
 rightX = 250;
-sunSize = 100;}
+sunSize = 100;
+lightSize = 100;}
 }
 
 
